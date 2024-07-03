@@ -18,9 +18,6 @@ const Home = () => {
         <Image src={tags} />
       </Flex>
     </Stack>
-    // <Flex background={`linear-gradient(to left, rgba(2, 204, 222, 0.4), rgba(2, 108, 222, 0.6)), url(${home})`} alignItems={"center"} justifyContent={"center"} direction={"column"} color={"white"}>
-
-    // </Flex>
   );
 };
 
