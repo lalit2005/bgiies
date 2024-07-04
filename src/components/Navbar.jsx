@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, textDecoration } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 import { NavLink } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const Link = ({ to, text }) => {
       style={({ isActive }) => {
         return {
           textDecoration: isActive ? "underline" : "none",
-          fontSize: "small",
+          fontSize: "medium",
         };
       }}
     >
@@ -24,14 +24,14 @@ const Navbar = () => {
       {/* <Flex bgColor={"#084F83"} color={"white"}>
         bionest@goa.bits-pilani.ac.in
       </Flex> */}
-      <Flex alignItems={"center"} justifyContent={"space-between"}>
-        <Flex alignItems={"center"} width={"30%"}>
+      <Flex alignItems={"center"} justifyContent={"space-around"}>
+        <Flex alignItems={"center"} width={"20%"} pl={"2rem"} gap={2}>
           <Image src={logo} boxSize={"15%"} />
-          <Text fontSize={"sm"} mr={"1px"}>
-            BITS Goa Innovation, Incubation & Entrepreneurship Society
+          <Text fontSize={"sm"} mr={"1px"} fontWeight={"700"}>
+            BITS Goa Innovation, Incubation{"\n"} & Entrepreneurship Society
           </Text>
         </Flex>
-        <Flex justifyContent={"space-evenly"} flex={2} pl={"5%"}>
+        <Flex justifyContent={"space-evenly"} flex={2} pl={"5%"} width={"70%"} mr={"50px"} fontFamily={"Roboto"}>
           <Link to={"/"} text={"Home"} />
           <Link to={"/facilities"} text={"Facilities"} />
           <Link to={"/incubation"} text={"Incubation"} />
