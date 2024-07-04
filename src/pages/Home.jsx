@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Center, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Button, ButtonGroup, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import home from "../assets/home_bg.png";
 import logo from "../assets/logo.png";
 import tags from "../assets/5 tags.png";

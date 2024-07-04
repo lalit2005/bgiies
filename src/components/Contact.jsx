@@ -1,4 +1,4 @@
-import { Center, Flex, Icon, createIcon } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import React from 'react'
 
