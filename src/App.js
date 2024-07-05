@@ -3,8 +3,8 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Description from "./components/Description";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>
-          <Description />
+          <Footer />
         </div>
       </BrowserRouter>
     </ChakraProvider>
