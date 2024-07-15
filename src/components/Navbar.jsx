@@ -28,7 +28,13 @@ const Navbar = () => {
             BITS Goa Innovation, Incubation & Entrepreneurship Society
           </Text>
         </Flex>
-        <Flex justifyContent={"space-between"} flex={2} fontFamily={"Roboto"} pl={'2rem'} pr={'2rem'}>
+        <Flex
+          justifyContent={"space-between"}
+          flex={2}
+          fontFamily={"Roboto"}
+          pl={"2rem"}
+          pr={"2rem"}
+        >
           <Link to={"/"} text={"Home"} />
           <Link to={"/facilities"} text={"Facilities"} />
           <Link to={"/incubation"} text={"Incubation"} />
