@@ -21,7 +21,11 @@ const Link = ({ to, text }) => {
 const Navbar = () => {
   return (
     <>
-      <Flex alignItems={"center"} justifyContent={"space-between"}>
+      <Flex
+        alignItems={"center"}
+        justifyContent={"space-between"}
+        maxWidth={"100vw"}
+      >
         <Flex alignItems={"center"} width={"30%"} pl={"2rem"} gap={2}>
           <Image src={logo} boxSize={"20%"} />
           <Text fontSize={"sm"} fontWeight={"700"}>

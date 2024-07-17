@@ -13,6 +13,11 @@ import icon1 from "../assets/icon 1.png";
 import icon2 from "../assets/icon 2.png";
 import icon3 from "../assets/icon 3.png";
 import Impact from "../components/Impact";
+import { PortfolioStartups } from "../components/PortfolioStartups";
+import WhyChooseUs from "../components/WhyChooseUs";
+import Investors from "../components/Investors";
+import Partners from "../components/Partners";
+import Team from "../components/Team";
 
 const Home = () => {
   return (
@@ -27,11 +32,10 @@ const Home = () => {
       >
         <Image src={logo} />
         <Text
-          fontFamily={"Roboto"}
           fontSize={"5xl"}
           width={"50%"}
           textAlign={"center"}
-          fontWeight={"600"}
+          fontWeight={"700"}
         >
           <span
             style={{ borderBottom: "6px solid #3FFF00", paddingBottom: "5px" }}
@@ -83,7 +87,6 @@ const Home = () => {
       </Stack>
       <Flex flexDir="column" alignItems={"center"} mt={"4rem"} mb={"4rem"}>
         <Text
-          fontFamily={"Roboto"}
           fontSize={"2xl"}
           width={"50%"}
           textAlign={"center"}
@@ -136,6 +139,11 @@ const Home = () => {
           </Flex>
         </Flex>
       </Flex>
+      <PortfolioStartups />
+      <Team />
+      <WhyChooseUs />
+      <Investors />
+      <Partners />
       <Impact />
     </>
   );

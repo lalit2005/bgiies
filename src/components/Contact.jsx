@@ -16,12 +16,15 @@ function Contact() {
   };
   return (
     <Flex
+      maxWidth={"100vw"}
       alignItems={"center"}
-      justifyContent={"space-evenly"}
+      justifyContent={"space-between"}
       padding={"0.2rem"}
+      px={"1rem"}
       backgroundColor={"#0a2351"}
-      gap={600}
+      //gap={600}
       color={"white"}
+      flexDirection={["column", "column", "row"]}
     >
       <Flex gap={3} alignItems={"center"} justifyContent={"center"}>
         <span style={colouredCircle}>
