@@ -65,10 +65,7 @@ const WhyChooseUs = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              With over 2 decades of a strong legacy behind us, we boast of global grade facilities for impeccable solutions
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem
@@ -93,15 +90,15 @@ const WhyChooseUs = () => {
                   <Box as="span" flex="1" textAlign="left" fontWeight={"700"}>
                     Mentoring Expertise
                   </Box>
-                  <AccordionIcon />
+                  {/* <AccordionIcon /> */}
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
+              {/* <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
-              </AccordionPanel>
+              </AccordionPanel> */}
             </AccordionItem>
             <AccordionItem
               borderRadius={"22px"}
@@ -125,15 +122,15 @@ const WhyChooseUs = () => {
                   <Box as="span" flex="1" textAlign="left" fontWeight={"700"}>
                     Track Record
                   </Box>
-                  <AccordionIcon />
+                  {/* <AccordionIcon /> */}
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
+              {/* <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
-              </AccordionPanel>
+              </AccordionPanel> */}
             </AccordionItem>
             <AccordionItem
               borderRadius={"22px"}
@@ -157,15 +154,15 @@ const WhyChooseUs = () => {
                   <Box as="span" flex="1" textAlign="left" fontWeight={"700"}>
                     Stimulating Environment
                   </Box>
-                  <AccordionIcon />
+                  {/* <AccordionIcon /> */}
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
+              {/* <AccordionPanel pb={4} bg="#FFAF18" color={"white"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
-              </AccordionPanel>
+              </AccordionPanel> */}
             </AccordionItem>
           </Accordion>
         </Box>

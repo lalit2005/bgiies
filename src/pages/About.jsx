@@ -11,7 +11,11 @@ import home from "../assets/home_bg.png";
 import logo from "../assets/logo.png";
 import tags from "../assets/5 tags.png";
 import handworkimg from "../assets/Hand-Work-1.png";
-import person from "../assets/person.png";
+import sk from '../assets/Prof Suman Kundu.jpg';
+import sb from '../assets/Prof Sunil Bhand.png';
+import dmk from '../assets/Prof DM Kulkarni.jpg';
+import mg from '../assets/Prof mridula goel.jpg';
+import is from '../assets/Ian Sardinha.jpg';
 
 const Home = () => {
   return (
@@ -163,29 +167,29 @@ const Home = () => {
             alignItems={"center"}
           >
             <Box textAlign={"center"}>
-              <Image src={person} display="block" />
+              <Image src={sk} display="block" boxSize={'8rem'}/>
               <Text marginTop={2}>Prof. Suman Kundu</Text>
               <Text>BGIIES President</Text>
             </Box>
             <Box textAlign={"center"}>
-              <Image src={person} display="block" />
+              <Image src={sb} display="block" boxSize={'8rem'} />
               <Text marginTop={2}>Prof. Sunil Bhand</Text>
-              <Text>BGIIES President</Text>
+              <Text>BGIIES Vice President</Text>
             </Box>
             <Box textAlign={"center"}>
-              <Image src={person} display="block" />
+              <Image src={dmk} display="block" boxSize={'8rem'} />
               <Text marginTop={2}>Prof. D. M. Kulkarni</Text>
-              <Text>BGIIES President</Text>
+              <Text>BGIIES Secretary</Text>
             </Box>
             <Box textAlign={"center"}>
-              <Image src={person} display="block" />
+              <Image src={mg} display="block" boxSize={'8rem'} />
               <Text marginTop={2}>Prof. Mridula Goel</Text>
-              <Text>BGIIES President</Text>
+              <Text>BGIIES Joint Secretary</Text>
             </Box>
             <Box textAlign={"center"}>
-              <Image src={person} display="block" />
+              <Image src={is} display="block" boxSize={'8rem'} />
               <Text marginTop={2}>Prof. Ian Francis Sardinha</Text>
-              <Text>BGIIES President</Text>
+              <Text>BGIIES Treasurer</Text>
             </Box>
           </Flex>
         </Box>

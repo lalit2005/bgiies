@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to={"/cohort"} text={"Cohort"} />
           <Link to={"/apply"} text={"Apply"} />
           <Link to={"/gallery"} text={"Gallery"} />
-          <Link to={"/tillnow"} text={"BGIIES Till Now"} />
+          <Link to={"/about"} text={"BGIIES Till Now"} />
           <Link to={"/sisfs"} text={"SISFS"} />
         </Flex>
       </Flex>
