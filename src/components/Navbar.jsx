@@ -21,14 +21,24 @@ const Link = ({ to, text }) => {
 const Navbar = () => {
   return (
     <>
-      <Flex alignItems={"center"} justifyContent={"space-between"}>
+      <Flex
+        alignItems={"center"}
+        justifyContent={"space-between"}
+        maxWidth={"100vw"}
+      >
         <Flex alignItems={"center"} width={"30%"} pl={"2rem"} gap={2}>
           <Image src={logo} boxSize={"20%"} />
           <Text fontSize={"sm"} fontWeight={"700"}>
             BITS Goa Innovation, Incubation & Entrepreneurship Society
           </Text>
         </Flex>
-        <Flex justifyContent={"space-between"} flex={2} fontFamily={"Roboto"} pl={'2rem'} pr={'2rem'}>
+        <Flex
+          justifyContent={"space-between"}
+          flex={2}
+          fontFamily={"Roboto"}
+          pl={"2rem"}
+          pr={"2rem"}
+        >
           <Link to={"/"} text={"Home"} />
           <Link to={"/facilities"} text={"Facilities"} />
           <Link to={"/incubation"} text={"Incubation"} />
