@@ -12,12 +12,7 @@ export const PortfolioStartups = () => {
   return (
     <Box paddingY={12}>
       <Flex alignItems={"center"} justifyContent={"center"}>
-        <Text
-          fontSize={"2xl"}
-          width={"50%"}
-          textAlign={"center"}
-          fontWeight={500}
-        >
+        <Text fontSize={"2xl"} width={"50%"} textAlign={"center"} fontWeight={500}>
           <span
             style={{
               borderBottom: "4px solid #FFAF18",
@@ -40,6 +35,12 @@ export const PortfolioStartups = () => {
 const Carousel = () => {
   //const [focusIndex, setfocusIndex] = useState(3);
   const [images, setimages] = useState([img1, img2, img3, img4, img5]);
+  const urls = {};
+  urls[img1] = "https://www.linkedin.com/company/bionic-imprints-private-limited/?originalSubdomain=in";
+  urls[img2] = "https://caare.in/";
+  urls[img3] = "https://www.cognixai.com/";
+  urls[img4] = "https://www.greenshiftnrg.com/";
+  urls[img5] = "https://www.bluelearn.in/";
 
   const MotionImage = motion(Image);
   const zTable = {
@@ -50,18 +51,11 @@ const Carousel = () => {
     4: 5,
   };
   return (
-    <Flex
-      mt={10}
-      maxWidth={"95vw"}
-      mx={"auto"}
-      minHeight={"30vh"}
-      alignItems={"center"}
-      justifyContent={"space-between"}
-    >
+    <Flex mt={10} maxWidth={"95vw"} mx={"auto"} minHeight={"30vh"} alignItems={"center"} justifyContent={"space-between"}>
       <IconButton
         icon={<ChevronLeftIcon />}
         onClick={() => {
-          setimages(rotateArrFwd(images));
+          setimages(rotateArrBackWard(images));
         }}
       />
       <Flex maxWidth={["95vw", "95vw", "85vw"]} mx={"auto"}>
@@ -69,6 +63,10 @@ const Carousel = () => {
           {images.map((img, index) => (
             <MotionImage
               key={img}
+              cursor={"pointer"}
+              onClick={() => {
+                window.open(urls[img]);
+              }}
               zIndex={zTable[index]}
               width={["20vw", "20vw", "15vw"]}
               //height={["20vw", "15vw"]}
@@ -76,7 +74,7 @@ const Carousel = () => {
               src={img}
               marginRight={index < 2 ? -5 : 0}
               marginLeft={index > 2 ? -5 : 0}
-              initial={{ scale: 1, x: index === 0 ? 0 : -20, opacity: 0 }}
+              initial={{ scale: 1, x: index === 0 ? 0 : -20, opacity: 1 }}
               animate={{
                 opacity: 1,
                 scale: index === 2 ? 1.5 : index === 1 || index === 3 ? 1.2 : 1,
@@ -95,7 +93,7 @@ const Carousel = () => {
         zIndex={100}
         icon={<ChevronRightIcon />}
         onClick={() => {
-          setimages(rotateArrBackWard(images));
+          setimages(rotateArrFwd(images));
         }}
       />
     </Flex>
